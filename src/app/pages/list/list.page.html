@@ -1,21 +1,42 @@
 <app-header titulo="Lista"></app-header>
 
 <ion-content>
+    <ion-list #lista>
+        <!-- Sliding item with text options on both sides -->
+        <ion-item-sliding *ngFor="let user of usuarios | async">
+            <ion-item-options side="start">
 
-  <ion-list>
-      <ion-item>
-       <ion-label>
-        <h3>Nombre</h3>      
-      <p>
-          Hola Mundo
-      </p>
-     
-      </ion-label>
-      <ion-label slot="end" text-right>
-          9635662525
-      </ion-label>
+                <ion-item-option slot="icon-only" name="start" (click)="favorite(user)"></ion-item-option>
+                <ion-item-option slot="icon-only" name="heart" color="danger" (click)="share(user)"></ion-item-option>
+            </ion-item-options>
 
-      </ion-item>
-  </ion-list>
 
+            <ion-item>
+                <ion-label>
+                    <h3>{{ user.name }}</h3>
+                    <h4>{{ user.email }}</h4>
+                    <p>{{ user.phone }}</p>
+                </ion-label>
+
+            </ion-item>
+
+            <ion-item-options side="start">
+                <ion-item-option (click)="favorite(user)">
+                    <ion-icon slot="icon-only" name="heart"></ion-icon>
+                </ion-item-option>
+                <ion-item-option (click)="share(user)" color="secondary">
+                    <ion-icon slot="icon-only" name="share"></ion-icon>
+                </ion-item-option>
+            </ion-item-options>
+
+            <ion-item-options side="end">
+                <ion-item-option color="danger" (click)="borrar(user)">
+                    <ion-icon slot="icon-only" name="trash"></ion-icon>
+                </ion-item-option>
+            </ion-item-options>
+
+
+        </ion-item-sliding>
+
+    </ion-list>
 </ion-content>
