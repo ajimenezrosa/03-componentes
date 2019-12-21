@@ -10,9 +10,13 @@ import { IonList } from '@ionic/angular';
 })
 export class ListPage implements OnInit {
 
-  @ViewChild('lista') lista: IonList;
+  // @ViewChild('lista') lista: IonList;
+  //  @ViewChild('lista') lista: IonList;
+  @ViewChild("lista") lista: IonList;
 
-usuarios: Observable<any>;
+
+
+              usuarios: Observable<any>;
 
   constructor(private dataService: DataService) { }
 
