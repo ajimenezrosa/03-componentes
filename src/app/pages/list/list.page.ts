@@ -12,7 +12,7 @@ export class ListPage implements OnInit {
 
   // @ViewChild('lista') lista: IonList;
   //  @ViewChild('lista') lista: IonList;
-  @ViewChild("lista") lista: IonList;
+  // @ViewChild("lista") lista: IonList;
 
 
 
@@ -31,17 +31,17 @@ export class ListPage implements OnInit {
 
   favorite(user ){
     console.log('favorite', user);
-    this.lista.closeSlidingItems();
+    // this.lista.closeSlidingItems();
   }
 
   share( user ){
       console.log('share', user);
-      this.lista.closeSlidingItems();
+      // this.lista.closeSlidingItems();
   }
 
   borrar( user ){
       console.log('borrar', user);
-      this.lista.closeSlidingItems();
+      // this.lista.closeSlidingItems();
   }
 
 
