@@ -1,3 +1,4 @@
+import { PipesModule } from './../../pipes/pipes.module';
 import { ComponentsModule } from './../../components/components.module';
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
@@ -15,7 +16,8 @@ import { SearchbarPage } from './searchbar.page';
     FormsModule,
     IonicModule,
     SearchbarPageRoutingModule,
-    ComponentsModule
+    ComponentsModule,
+    PipesModule
   ],
   declarations: [SearchbarPage]
 })
