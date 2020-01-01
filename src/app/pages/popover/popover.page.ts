@@ -1,7 +1,7 @@
 import { PopinfoComponent } from './../../components/popinfo/popinfo.component';
 import { Component, OnInit } from '@angular/core';
 import { PopoverController } from '@ionic/angular';
-import { PopinfoComponent } from '../../components/popinfo/popinfo.component';
+
 
 @Component({
   selector: 'app-popover',
