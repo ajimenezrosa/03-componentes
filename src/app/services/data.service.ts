@@ -1,7 +1,7 @@
 import { Componente } from './../pages/interfaces/interfaces';
 import { Injectable } from '@angular/core';
 import { HttpClientModule, HttpClient } from '@angular/common/http';
-
+import  { delay } from 'rxjs/operators';
 
 @Injectable({
   providedIn: 'root'
@@ -26,7 +26,10 @@ getAlbumes(){
 
 
 getHeroes(){
-  return this.http.get('/assets/data/superheroes.json');
+  return this.http.get('/assets/data/superheroes.json')
+        .pipe(
+          delay(2000)
+        );
 }
 
 

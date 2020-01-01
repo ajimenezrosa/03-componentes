@@ -16,6 +16,8 @@
     </ion-segment>
 
 
+
+
 </ion-toolbar>
 <ion-content>
 
@@ -36,6 +38,24 @@
         </ion-item>
     </ion-list>
 
+    <ion-list *ngIf="(superheroes | async)  === null">
+        <ion-item *ngFor="let item of [1,1,1,1,1,1,1,1,1,1]" class="animated flash slow infinite">
+            <ion-label>
+                <h3>
+                    <ion-skeleton-text width="70%"></ion-skeleton-text>
+                </h3>
 
+            </ion-label>
+            <ion-label>
+                <p>
+                    <ion-skeleton-text width="100%"></ion-skeleton-text>
+                </p>
+            </ion-label>
+
+            <ion-label slot="end" text-right>
+                <ion-skeleton-text width=40%></ion-skeleton-text>
+            </ion-label>
+        </ion-item>
+    </ion-list>
 
 </ion-content>
