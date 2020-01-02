@@ -1,7 +1,8 @@
-import { Componente } from './../pages/interfaces/interfaces';
+
 import { Injectable } from '@angular/core';
 import { HttpClientModule, HttpClient } from '@angular/common/http';
 import  { delay } from 'rxjs/operators';
+import { Componente } from '../pages/interfaces/interfaces';
 
 @Injectable({
   providedIn: 'root'

@@ -1,4 +1,5 @@
-import { Componente } from './../interfaces/interfaces';
+import { Componente } from './../../pages/interfaces/interfaces';
+// import { Componente } from './../interfaces/interfaces';
 import { Component, OnInit } from '@angular/core';
 import { DataService } from '../../services/data.service';
 import { Observable } from 'rxjs';

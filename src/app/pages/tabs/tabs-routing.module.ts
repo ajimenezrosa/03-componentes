@@ -6,7 +6,7 @@ import { TabsPage } from './tabs.page';
 const routes: Routes = [
   {
       path: '',
-      redirectTo: 'contact'
+      redirectTo: 'account'
   },
   {
     path: '',

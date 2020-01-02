@@ -1,4 +1,4 @@
-import { ComponentsModule } from './components.module';
+// import { ComponentsModule } from './components.module';
 import { MenuComponent } from './menu/menu.component';
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
